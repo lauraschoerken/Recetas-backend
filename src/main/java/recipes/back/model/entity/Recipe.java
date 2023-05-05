@@ -37,15 +37,17 @@ public class Recipe implements Serializable{
 	@Column
 	private String info;
 	
+	private String image;
+	
 	private Time time;
 	
 	@NotNull
 	@OneToOne
 	private Requirement requirement; 
 	
-	private List<String> image;
-	
+	@OneToMany
 	private List<Steps> steps;
 	
+	private String note; 
 	
 }

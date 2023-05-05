@@ -36,5 +36,5 @@ public class Steps implements Serializable {
 	private String step; 
 	
 	@Column
-	private String img; 
+	private String image; 
 }
